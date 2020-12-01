@@ -1,3 +1,5 @@
+// A guessing game using prompt and a loop
+
 const main = document.querySelector('main');
 const randomNumber = getRandomNumber(10);
 let message;
@@ -19,3 +21,5 @@ for (let i = 1; i <= 10; i++) {
 }
 //  2) Display a message letting the user know they guessed the number
 main.innerHTML = `<h1>${message}</h1>`;
+
+// End Guessing Game
