@@ -45,7 +45,6 @@ const addNewTeachers = (newTeachers) => {
 };
 
 function printTreehouseSummary () {
-  let count = 0;
   // TODO: fix this function so that it prints the correct number of courses and   teachers
   teachers.forEach((teacher) => {
     console.log(`${teacher.name} teaches ${teacher.topicArea}`);
