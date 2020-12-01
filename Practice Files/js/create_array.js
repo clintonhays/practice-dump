@@ -17,7 +17,7 @@ const languages = [
 
 // 2. Use console.log to display the number of elements in the array:
 
-console.log(languages);
+console.log(languages.length);
 
 /* 3. Use console.log to list the first element from the array using an index value. */
 console.log(languages[0]);
