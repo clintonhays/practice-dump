@@ -49,7 +49,7 @@ function printTreehouseSummary () {
   teachers.forEach((teacher) => {
     console.log(`${teacher.name} teaches ${teacher.topicArea}`);
   });
-  return console.log(`Treehouse has ${courses.length} JavaScript courses, and ${teachers.length} Javascript teachers`);
+  return console.log(`Treehouse has ${i} JavaScript courses, and ${teachers.length} Javascript teachers`);
 }
 
 addNewTeachers(newTeachers);
