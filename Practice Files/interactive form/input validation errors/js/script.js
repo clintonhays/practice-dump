@@ -34,7 +34,7 @@ const validationPass = (element) => {
 
   parent.className = 'valid';
   parent.classList.remove('not-valid');
-  parent.lastElementChild.style.display = 'none';
+  parent.lastElementChild.style.display = '';
 };
 
 // 2. Create a function named `validationFail` and give it one parameter: `element`
