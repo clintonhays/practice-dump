@@ -1,5 +1,3 @@
-// `const emailIsValid = /^[^@]+@[^@.]+\.[a-z]+$/i.test(emailValue);`.
-
 /**
  * Treehouse FSJS Techdegree - Project Warm Up
  * Form Input Validation - JS
@@ -54,11 +52,16 @@ const emailValidator = () => {
   // 2. Create a variable named `emailIsValid` to store the test value for this input.
   // Since the email field's requirement is that it should be a validly formatted email address with a `.com` TLD,
   // the variable should look something like this:
-
+  // `const emailIsValid = /^[^@]+@[^@.]+\.[a-z]+$/i.test(emailValue);`.
   // That tests that there is a few characters for the username, followed by “@”, followed by a few more characters
   // and a “.com” for the domain name.
   // Log out something like this: `console.log(`Email validation test on ${emailValue} evaluates to ${emailIsValid}`);`.
+
+  const emailIsValid = /^[^@]+@[^@.]+\.[a-z0-9]+$/i.test(emailValue);
+
   // 3. Lastly, return `emailIsValid`.
+
+  return emailIsValid;
 };
 
 /* Helper function to validate language section */
