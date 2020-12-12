@@ -16,7 +16,7 @@ let languageTotal = 0;
 
 // Don't touch ↓↓↓ - Helper function for updating the total number of languages selected
 document.querySelector('#languages').addEventListener('change', (e) => {
-  e.target.checked ? total++ : total--;
+  e.target.checked ? languageTotal++ : languageTotal--;
   languageTotalElement.innerHTML = `Total: ${languageTotal}`;
 });
 
@@ -71,7 +71,12 @@ const languageValidator = () => {
   // `const languageSectionIsValid = languageTotal > 0;`.
   // That tests that the `languageTotal` variable provided for you above equals an integer greater than zero.
   // Log out something like this: `console.log(`Language section validation test evaluates to ${languageSectionIsValid}`);`.
+
+  const languageSectionIsValid = languageTotal > 0;
+
   // 2. Lastly, return `languageSectionIsValid`.
+
+  return languageSectionIsValid;
 };
 
 /* Submit listener on the form element */
@@ -95,13 +100,26 @@ form.addEventListener('submit', (e) => {
   // If `(!nameValidator())` call `e.preventDefault();`
   // And log out a message saying this particular validator prevented submission
 
+  if (!nameValidator()) {
+    e.preventDefault();
+    console.error(`Name value is not valid.`);
+  }
+
   // 2. Repeat the above step for the rest of your validation functions
+
+  if (!emailValidator()) {
+    e.preventDefault();
+    console.error(`Email value is not valid.`);
+  }
+
+  if (!languageValidator()) {
+    e.preventDefault();
+    console.error(`Language value is not valid.`);
+  }
 
   // And feel free to comment out or delete any log statements from the validation functions above
 
   // Submit handler test log - Feel free to delete this or comment it out
-  nameValidator();
-  emailValidator();
   console.log('Submit handler is functional!');
 });
 
