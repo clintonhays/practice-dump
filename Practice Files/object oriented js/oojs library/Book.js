@@ -10,9 +10,9 @@ class Book {
 
   set setOut (bool) {
     this.out = bool;
-    if (this.out) {
+    if (bool) {
       const dueDate = new Date();
-      dueDate.setDate(dueDate.getDate() + 14);
+      dueDate.setDate(dueDate.getDate() - 14);
       this.dueDate = dueDate;
     } else {
       this.dueDate = null;

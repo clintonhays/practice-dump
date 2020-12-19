@@ -3,6 +3,7 @@ class Patron {
     this.name = name;
     this.email = email;
     this.currentBook = null;
+    this.balace = 0;
   }
 
   checkoutBook (book) {
