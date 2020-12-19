@@ -16,7 +16,7 @@
   const library = new Library();
   
 
-  const book = new Book('Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', '978-0439708180');
+  const book = new Book(`Harry Potter and the Sorcerer's Stone', 'J.K. Rowling', '978-0439708180`);
   console.log(book);
 
   const patron = new Patron('Clinton', 'em@il.com')
@@ -26,7 +26,7 @@
   library.addPatron(patron);
   console.log(library);
 
-  patron.checkoutBook(book);
+  patron.returnBook(book);
   console.log(patron);
   console.log(book);
 

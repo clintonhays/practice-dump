@@ -6,19 +6,14 @@ class Patron {
   }
 
   checkoutBook (book) {
-    const dueDate = new Date();
-    dueDate.setDate(dueDate.getDate() + 14);
-
     this.currentBook = book.title;
     book.patron = this.name;
-    book.out = true;
-    book.dueDate = dueDate;
+    book.setOut = true;
   }
 
   returnBook (book) {
     this.currentBook = null;
     book.patron = null;
-    book.out = false;
-    book.dueDate = null;
+    book.setOut = false;
   }
 }
