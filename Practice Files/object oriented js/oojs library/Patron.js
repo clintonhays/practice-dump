@@ -5,11 +5,20 @@ class Patron {
     this.currentBook = null;
   }
 
-  checkout (book) {
-    this.currentBook = book;
+  checkoutBook (book) {
+    const dueDate = new Date();
+    dueDate.setDate(dueDate.getDate() + 14);
+
+    this.currentBook = book.title;
+    book.patron = this.name;
+    book.out = true;
+    book.dueDate = dueDate;
   }
 
-  returnBook () {
+  returnBook (book) {
     this.currentBook = null;
+    book.patron = null;
+    book.out = false;
+    book.dueDate = null;
   }
 }
