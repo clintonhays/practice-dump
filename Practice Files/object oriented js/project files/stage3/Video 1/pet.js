@@ -55,3 +55,34 @@ const ferguson = new Pet('cat', 3, 'grumpy cat', 'rowr');
 miso.owner = new Owner('Rerun', '123 ABC St');
 
 miso.owner.phone = '(123) 456-7890';
+
+// class Student {
+// 	constructor (gpa, credits) {
+// 		this.gpa = gpa;
+// 		this.credits = credits;
+// 	}
+
+// 	get level () {
+// 		const credits = this.credits;
+// 		let level = '';
+// 		if (credits > 90) {
+// 			level += 'Senior';
+// 		}
+// 		else if (credits <= 90 && credits >= 61) {
+// 			level += 'Junior';
+// 		}
+// 		else if (credits <= 60 && credits >= 31) {
+// 			level += 'Sophomore';
+// 		}
+// 		else {
+// 			level += 'Freshman';
+// 		}
+// 		return level;
+// 	}
+
+// 	stringGPA () {
+// 		return this.gpa.toString();
+// 	}
+// }
+
+// const student = new Student(3.9, 30);
