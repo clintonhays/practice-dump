@@ -6,7 +6,231 @@
     <title>Custom Bootstrap</title>
     <link rel="stylesheet" href="./scss/custom.css" />
   </head>
-  <body class="bg-custom-white">
-    <nav></nav>
+  <body class="bg-custom-blue">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-custom-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">about</a>
+            <a class="nav-link" href="#">projects</a>
+            <a class="nav-link" href="#">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header gradient">
+      <div class="container">
+        <div class="row justify-content-center align-items-center pt-5">
+          <div class="col-md-5 pt-5 pt-md-0 text-center">
+            <h1>Clinton Hays</h1>
+            <h2 class="text-white">Front End Developer</h2>
+          </div>
+          <div class="col-md-5"><img src="img/coding.svg" alt="" /></div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 225">
+        <path
+          fill="#1c0658"
+          fill-opacity="1"
+          d="M0,0L0,288L72,288L72,96L144,96L144,128L216,128L216,224L288,224L288,160L360,160L360,320L432,320L432,128L504,128L504,160L576,160L576,64L648,64L648,128L720,128L720,0L792,0L792,256L864,256L864,128L936,128L936,160L1008,160L1008,288L1080,288L1080,128L1152,128L1152,256L1224,256L1224,64L1296,64L1296,0L1368,0L1368,192L1440,192L1440,320L1368,320L1368,320L1296,320L1296,320L1224,320L1224,320L1152,320L1152,320L1080,320L1080,320L1008,320L1008,320L936,320L936,320L864,320L864,320L792,320L792,320L720,320L720,320L648,320L648,320L576,320L576,320L504,320L504,320L432,320L432,320L360,320L360,320L288,320L288,320L216,320L216,320L144,320L144,320L72,320L72,320L0,320L0,320Z"
+        ></path>
+      </svg>
+    </header>
+
+    <section class="about bg-custom-blue text-custom-white">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <h2 class="fs-1 text-center">About Me</h2>
+          <p class="col-md-8 fs-5">
+            Nothing drives me more than the pursuit of knowledge. As I age, I find my desire to learn only grows
+            stronger. About a year age, I decided to let my thirst for knowledge lead me where it would. I soon found
+            myself immersed in the world of coding. The more I studied, the more I recognized the perfect path coding is
+            for someone so driven by learning because, as I am discovering each day, there is always something new just
+            around the corner. I invite you to have a look at by resume here or download it here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <div class="row">
+          <div class="card col-md-3 mx-3 my-3 bg-custom-white">
+            <div class="card-body">
+              <h5 class="card-title">Conference Demo Site</h5>
+              <p class="card-text">
+                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
+              </p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+                read more
+              </button>
+            </div>
+            <div class="modal" id="project1">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-custom-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Parameters:</h3>
+                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <h3>Challenges:</h3>
+                    <p>
+                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
+                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
+                      impossible.
+                    </p>
+                    <h3>Takeaways:</h3>
+                    <p>
+                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
+                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
+                      writing my own Sass.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-3 mx-3 my-3 bg-custom-white">
+            <div class="card-body">
+              <h5 class="card-title">Conference Demo Site</h5>
+              <p class="card-text">
+                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
+              </p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+                read more
+              </button>
+            </div>
+            <div class="modal" id="project1">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-custom-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Parameters:</h3>
+                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <h3>Challenges:</h3>
+                    <p>
+                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
+                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
+                      impossible.
+                    </p>
+                    <h3>Takeaways:</h3>
+                    <p>
+                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
+                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
+                      writing my own Sass.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-3 mx-3 my-3 bg-custom-white">
+            <div class="card-body">
+              <h5 class="card-title">Conference Demo Site</h5>
+              <p class="card-text">
+                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
+              </p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+                read more
+              </button>
+            </div>
+            <div class="modal" id="project1">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-custom-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Parameters:</h3>
+                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <h3>Challenges:</h3>
+                    <p>
+                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
+                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
+                      impossible.
+                    </p>
+                    <h3>Takeaways:</h3>
+                    <p>
+                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
+                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
+                      writing my own Sass.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-3 mx-3 my-3 bg-custom-white">
+            <div class="card-body">
+              <h5 class="card-title">Conference Demo Site</h5>
+              <p class="card-text">
+                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
+              </p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+                read more
+              </button>
+            </div>
+            <div class="modal" id="project1">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-custom-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h3>Parameters:</h3>
+                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <h3>Challenges:</h3>
+                    <p>
+                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
+                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
+                      impossible.
+                    </p>
+                    <h3>Takeaways:</h3>
+                    <p>
+                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
+                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
+                      writing my own Sass.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>

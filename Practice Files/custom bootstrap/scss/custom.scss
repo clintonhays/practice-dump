@@ -17,4 +17,36 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+.gradient {
+  background: rgb(255, 22, 144);
+  background: linear-gradient(135deg, rgba(92, 38, 134, 1) 65%, rgba(255, 22, 144, 1) 100%);
+}
+
+.page-header {
+  // margin-top: 5rem;
+  color: white;
+
+  h1 {
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 0px 0px 24px #cecece;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.about {
+  h2 {
+    text-shadow: 0px 0px 24px #cecece;
+  }
+}
+
+.modal-body {
+  h3 {
+    width: 75%;
+    border-bottom: 1px solid #f4d676;
+  }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
