@@ -1,0 +1,20 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Custom Color Map
+
+$custom-colors: (
+  "custom-pink": #ff1690,
+  "custom-blue": #1c0658,
+  "custom-purple": #5c2686,
+  "custom-yellow": #f4d676,
+  "custom-teal": #36cdc4,
+  "custom-white": #fffcf4,
+  "custom-orange": #ff9a16,
+);
+
+// Merge with Bootstrap Theme Map
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
