@@ -2988,7 +2988,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: hsl(216, 98%, 52%);
+  background-color: hsl(0, 0%, 0%);
   border-color: #0d6efd;
 }
 .btn-primary:hover {
@@ -2996,14 +2996,16 @@ fieldset:disabled .btn {
   background-color: hsl(216, 90%, 44%);
   border-color: #0a58ca;
 }
+
 .btn-pink {
   color: #fff;
   background-color: var(--bs-custom-pink);
   border-color: var(--bs-custom-pink);
 }
+
 .btn-pink:hover {
   color: #fff;
-  background-color: hsl(294, 100%, 58%);
+  background-color: hsl(294, 100%, 70%);
   border-color: var(--bs-custom-pink);
 }
 
@@ -3124,7 +3126,7 @@ fieldset:disabled .btn {
 }
 .btn-info:hover {
   color: #000;
-  background-color: #31d2f2;
+  background-color: #7dd7e9;
   border-color: #25cff2;
 }
 .btn-check:focus + .btn-info,
