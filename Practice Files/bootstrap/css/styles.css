@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+}
+
+.gradient {
+  background: rgb(34, 76, 255);
+  background: linear-gradient(150deg, rgba(34, 76, 255, 1) 0%, rgba(230, 0, 255, 1) 100%);
+}
+
+.page-header {
+  font-size: 1.25rem;
+  color: white;
+}
