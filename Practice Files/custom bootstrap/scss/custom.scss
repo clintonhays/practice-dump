@@ -13,13 +13,26 @@ $custom-colors: (
   "custom-orange": #ff9a16,
 );
 
-// Merge with Bootstrap Theme Map
+// Additional Spacers
+
+$add-spacers: (
+  6: $spacer * 6,
+  7: $spacer * 12,
+);
+
+// Merge with Bootstrap Theme Maps
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
+$spacers: map-merge($spacers, $add-spacers);
 
 .gradient {
-  background: rgb(255, 22, 144);
+  background: rgb(92, 38, 134);
   background: linear-gradient(135deg, rgba(92, 38, 134, 1) 65%, rgba(255, 22, 144, 1) 100%);
+}
+
+.gradient-2 {
+  background: rgb(28, 6, 88);
+  background: linear-gradient(135deg, rgba(28, 6, 88, 1) 65%, rgba(54, 205, 196, 1) 100%);
 }
 
 .page-header {
@@ -36,8 +49,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
-.about {
+section {
   h2 {
+    color: #fffcf4;
     text-shadow: 0px 0px 24px #cecece;
   }
 }
