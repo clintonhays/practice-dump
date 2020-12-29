@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Rock+Salt&family=Sarina&display=swap");
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -30,51 +31,26 @@ $spacers: map-merge($spacers, $add-spacers);
   background: linear-gradient(135deg, rgba(92, 38, 134, 1) 65%, rgba(255, 22, 144, 1) 100%);
 }
 
-.gradient-2 {
-  background: rgb(28, 6, 88);
-  background: linear-gradient(135deg, rgba(28, 6, 88, 1) 65%, rgba(54, 205, 196, 1) 100%);
-}
-
-a.navbar-brand.nav-link.active {
-  background-color: rgb(92, 38, 134);
+.glow-white {
   color: #fffcf4;
-  border-radius: 10px;
+  text-shadow: 0px 0px 24px #fff;
 }
 
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link.active {
-  background-color: rgb(92, 38, 134);
-  color: #fffcf4 !important;
-  border-radius: 10px;
-}
-
-a.navbar-brand.nav-link {
-  border-radius: 10px;
-}
-
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link {
-  border-radius: 10px;
+.glow-shadow {
+  color: #fffcf4;
+  box-shadow: 0px 0px 24px #fff;
 }
 
 .page-header {
-  // margin-top: 5rem;
-  color: white;
+  color: #fffcf4;
 
   h1 {
-    font-size: 3rem;
+    font-family: "Sarina", cursive;
+    font-size: 5rem;
     font-style: italic;
-    text-shadow: 0px 0px 24px #cecece;
   }
   h2 {
     font-size: 1.25rem;
-  }
-}
-
-section {
-  h2 {
-    color: #fffcf4;
-    text-shadow: 0px 0px 24px #cecece;
   }
 }
 

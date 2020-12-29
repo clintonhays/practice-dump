@@ -1,52 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Rock+Salt&family=Sarina&display=swap");
 .gradient {
   background: #5c2686;
   background: linear-gradient(135deg, #5c2686 65%, #ff1690 100%);
 }
 
-.gradient-2 {
-  background: #1c0658;
-  background: linear-gradient(135deg, #1c0658 65%, #36cdc4 100%);
-}
-
-a.navbar-brand.nav-link.active {
-  background-color: #5c2686;
+.glow-white {
   color: #fffcf4;
-  border-radius: 10px;
+  text-shadow: 0px 0px 24px #fff;
 }
 
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link.active {
-  background-color: #5c2686;
-  color: #fffcf4 !important;
-  border-radius: 10px;
-}
-
-a.navbar-brand.nav-link {
-  border-radius: 10px;
-}
-
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link {
-  border-radius: 10px;
+.glow-shadow {
+  color: #fffcf4;
+  box-shadow: 0px 0px 24px #fff;
 }
 
 .page-header {
-  color: white;
+  color: #fffcf4;
 }
 
 .page-header h1, .page-header .h1 {
-  font-size: 3rem;
+  font-family: "Sarina", cursive;
+  font-size: 5rem;
   font-style: italic;
-  text-shadow: 0px 0px 24px #cecece;
 }
 
 .page-header h2, .page-header .h2 {
   font-size: 1.25rem;
-}
-
-section h2, section .h2 {
-  color: #fffcf4;
-  text-shadow: 0px 0px 24px #cecece;
 }
 
 .modal-body h3, .modal-body .h3 {
