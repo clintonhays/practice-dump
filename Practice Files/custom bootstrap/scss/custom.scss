@@ -35,6 +35,15 @@ $spacers: map-merge($spacers, $add-spacers);
   background: linear-gradient(135deg, rgba(28, 6, 88, 1) 65%, rgba(54, 205, 196, 1) 100%);
 }
 
+.navbar-light .navbar-nav .active {
+  background-color: rgb(92, 38, 134);
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: rgb(92, 38, 134);
+}
+
 .page-header {
   // margin-top: 5rem;
   color: white;

@@ -8,6 +8,15 @@
   background: linear-gradient(135deg, #1c0658 65%, #36cdc4 100%);
 }
 
+.navbar-light .navbar-nav .active {
+  background-color: #5c2686;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #5c2686;
+}
+
 .page-header {
   color: white;
 }

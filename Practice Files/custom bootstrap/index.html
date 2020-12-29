@@ -6,10 +6,10 @@
     <title>Custom Bootstrap</title>
     <link rel="stylesheet" href="./scss/custom.css" />
   </head>
-  <body class="bg-custom-blue">
+  <body class="bg-custom-blue" data-bs-spy="scroll" data-bs-target="#nav">
     <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-custom-white fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand nav-link" href="#home">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,15 +23,15 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">about</a>
-            <a class="nav-link" href="#">projects</a>
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" aria-current="page" href="#about">about</a>
+            <a class="nav-link" href="#projects">projects</a>
+            <a class="nav-link" href="#contact">contact</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <header class="page-header gradient">
+    <header class="page-header gradient" id="home">
       <div class="container">
         <div class="row justify-content-center align-items-center pt-5">
           <div class="col-md-5 pt-5 pt-md-0 text-center">
@@ -50,8 +50,8 @@
       </svg>
     </header>
 
-    <section class="about bg-custom-blue">
-      <div class="container mt-7 text-custom-white">
+    <section class="bg-custom-blue">
+      <div class="container mt-7 text-custom-white" id="about">
         <div class="row justify-content-center align-items-center">
           <h2 class="fs-1 text-center">About Me</h2>
           <div class="col-md-3"><img src="img/knowledge_.svg" alt="computer icon" /></div>
@@ -64,7 +64,7 @@
           </p>
         </div>
       </div>
-      <div class="container mt-7 mb-6">
+      <div class="container mt-7 mb-6" id="projects">
         <div class="row justify-content-center">
           <h2 class="fs-1 text-center">Projects</h2>
           <div class="card col-md-3 mx-3 my-3 bg-custom-white">
@@ -109,35 +109,37 @@
           </div>
           <div class="card col-md-3 mx-3 my-3 bg-custom-white">
             <div class="card-body">
-              <h5 class="card-title">Conference Demo Site</h5>
-              <p class="card-text">
-                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
-              </p>
-              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+              <h5 class="card-title">Newsletter Signup Page</h5>
+              <p class="card-text">A signup page focusing on forms and inputs.</p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project2">
                 read more
               </button>
             </div>
-            <div class="modal" id="project1">
+            <div class="modal" id="project2">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content bg-custom-white">
                   <div class="modal-header">
-                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <h5 class="modal-title">Newsletter Signup Page</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h3>Parameters:</h3>
-                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <p>Create a form page from a client mockup using HTML and CSS.</p>
                     <h3>Challenges:</h3>
                     <p>
-                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
-                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
-                      impossible.
+                      HTML forms are quite robust, requiring many attributes and labels. It was important to make sure
+                      that everything was connected correctly. Additionally, inputs are not as easy to style as other
+                      elements. It took a lot of research to find out what parts of inputs can be styled. I attempted to
+                      use a neumorphism approach to the styling. It was both challenging and rewarding, but I'm sure
+                      that I can refactor the design to be even more dynamic. I plan to add validation to this form
+                      using JavaScript.
                     </p>
                     <h3>Takeaways:</h3>
                     <p>
-                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
-                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
-                      writing my own Sass.
+                      I am still actively studying form elements and styling. I want to make sure forms I create in the
+                      future are accessible and use proper markup. In addition, while styling this form, I realized that
+                      user experience and accessibility must be prioritized. It was a great learning experience and a
+                      fun project.
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -149,35 +151,40 @@
           </div>
           <div class="card col-md-3 mx-3 my-3 bg-custom-white">
             <div class="card-body">
-              <h5 class="card-title">Conference Demo Site</h5>
-              <p class="card-text">
-                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
-              </p>
-              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+              <h5 class="card-title">Employee Directory</h5>
+              <p class="card-text">A directory using an API to generate random employee information.</p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project3">
                 read more
               </button>
             </div>
-            <div class="modal" id="project1">
+            <div class="modal" id="project3">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content bg-custom-white">
                   <div class="modal-header">
-                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <h5 class="modal-title">Employee Directory</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h3>Parameters:</h3>
-                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <p>
+                      Create an interactive directory based on client mockup that displays information cards and
+                      detailed information modals.
+                    </p>
                     <h3>Challenges:</h3>
                     <p>
-                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
-                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
-                      impossible.
+                      This was my first attempt at using an API, using promises made it a lot easier. The biggest
+                      speedbump came when trying to wrap my head around pulling information from the API. Once I started
+                      thinking in terms of objects, it made more sense. I also ran into some trouble when creating the
+                      search function because I didn't fully understand the difference between static and live html
+                      lists. Now that I have a better understanding of these lists, I'll run into fewer issues in the
+                      future.
                     </p>
                     <h3>Takeaways:</h3>
                     <p>
-                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
-                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
-                      writing my own Sass.
+                      Almost immediately after working on this project, I started to think of other tasks that I could
+                      use APIs to complete. There is something appealing to me about pulling data out of collections of
+                      objects. I am particularly interested in the practices of consolidation, efficiency, and using the
+                      right tool for the job. I think APIs offer a great way to hit those key areas.
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -189,35 +196,40 @@
           </div>
           <div class="card col-md-3 mx-3 my-3 bg-custom-white">
             <div class="card-body">
-              <h5 class="card-title">Conference Demo Site</h5>
-              <p class="card-text">
-                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
-              </p>
-              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+              <h5 class="card-title">Photo Gallery</h5>
+              <p class="card-text">A user-friendly, interactive photo gallery with lightbox and search functions.</p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project4">
                 read more
               </button>
             </div>
-            <div class="modal" id="project1">
+            <div class="modal" id="project4">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content bg-custom-white">
                   <div class="modal-header">
-                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <h5 class="modal-title">Photo Gallery</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h3>Parameters:</h3>
-                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <p>
+                      Create an interactive photo gallery that allows search and uses lightbox to interact with photos.
+                    </p>
                     <h3>Challenges:</h3>
                     <p>
-                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
-                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
-                      impossible.
+                      There were two main challenges with this project. The first was understanding how to properly use
+                      libraries, plugins, and modules. I had some initial trouble getting the baguettebox plugin working
+                      becuase I wasn't sure how the plugin interacted with my own code. The project file structure
+                      needed some adjusting on my end. After learning that a plugin really is just that, it all made
+                      sense. The second challenge was creating the search function from scratch. It took some research,
+                      but I eventually found a tutorial that made sense. This was one of the first in-depth JavaScript
+                      projects I attemtped. Having learned more about DOM traversal, search functions are now easier to
+                      understand and implement.
                     </p>
                     <h3>Takeaways:</h3>
                     <p>
-                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
-                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
-                      writing my own Sass.
+                      This project showed me that plugins and libraries are powerful, useful tools. Since completing
+                      this project, I have implemented several into other projects. However, while still learning, I'd
+                      like to use vanilla JS as much as possible.
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -229,35 +241,36 @@
           </div>
           <div class="card col-md-3 mx-3 my-3 bg-custom-white">
             <div class="card-body">
-              <h5 class="card-title">Conference Demo Site</h5>
-              <p class="card-text">
-                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
-              </p>
-              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+              <h5 class="card-title">Four-in-a-Row Game</h5>
+              <p class="card-text">A four in a row game focusing on object oriented programming with vanilla JS.</p>
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project5">
                 read more
               </button>
             </div>
-            <div class="modal" id="project1">
+            <div class="modal" id="project5">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content bg-custom-white">
                   <div class="modal-header">
-                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <h5 class="modal-title">Four-in-a-Row Game</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h3>Parameters:</h3>
-                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <p>Create a multiplayer, connect 4 style game focusing on OOJS.</p>
                     <h3>Challenges:</h3>
                     <p>
-                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
-                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
-                      impossible.
+                      This was the most JavaScript heavy project I tackled in the beginning of my coding journey. The
+                      main obstacle I encountered was grasping how objects interact with one another. Trying to keep the
+                      relationships of the objects straight lead to some frustrating moments. I also had a couple of
+                      issues with the file structure. Up to this point, I had been working with a single JS file that I
+                      could peruse with ease when needed. This project expanded the file tree. However, I was eventually
+                      able to comprehend both of these aspects.
                     </p>
                     <h3>Takeaways:</h3>
                     <p>
-                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
-                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
-                      writing my own Sass.
+                      Object oriented JavaScript is a diverse and powerful tool. Much of the structure belies just how
+                      flexible JavaScript truly is. I enjoy working with objects and arrays, so I find this kind of
+                      programming particularly rewarding.
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -269,35 +282,41 @@
           </div>
           <div class="card col-md-3 mx-3 my-3 bg-custom-white">
             <div class="card-body">
-              <h5 class="card-title">Conference Demo Site</h5>
+              <h5 class="card-title">React Scoreboard</h5>
               <p class="card-text">
-                A landing page for a fictional conference that uses Bootstrap for the layout, design, and functionality.
+                A scoreboard with multiple functioning parts including a stopwatch and leader marker.
               </p>
-              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project1">
+              <button type="button" class="btn btn-custom-purple" data-bs-toggle="modal" data-bs-target="#project6">
                 read more
               </button>
             </div>
-            <div class="modal" id="project1">
+            <div class="modal" id="project6">
               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content bg-custom-white">
                   <div class="modal-header">
-                    <h5 class="modal-title">Conference Demo Site</h5>
+                    <h5 class="modal-title">React Scoreboard</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h3>Parameters:</h3>
-                    <p>Create a site based on a client mockup using the Bootstrap framework.</p>
+                    <p>Create a scoreboard using React focusing on components and state.</p>
                     <h3>Challenges:</h3>
                     <p>
-                      Bootstrap was a new framework for me. I had trouble getting my head around the grid system in the
-                      beginning. Bootstrap can be very limiting, so adjusting small details or style choices felt almost
-                      impossible.
+                      React is an incredible framework. As a new developer, the myriad challenges posed by React were a
+                      bit overwhelming. I've gone through this tutorial several times to reinforce the concepts. The
+                      main challenge for me was understanding how to properly structure a React application. I know this
+                      will improve with more practice, as of right now, it’s still challenging. The syntax and component
+                      interaction were confusing for me, but are becoming clearer each time I build with React. Another
+                      minor issue was making sure my file structure was correct, especially since I wanted to deploy
+                      through Github pages. Fortunately, plenty of documentation exists about how to deploy on Github
+                      pages.
                     </p>
                     <h3>Takeaways:</h3>
                     <p>
-                      Bootstrap is a tool that I will make use of in certain situations. Bootstrap could save a lot of
-                      time on projects that don't require a lot of intricate customization. Personally, I still enjoy
-                      writing my own Sass.
+                      React will be my go-to frontend development tool. Although it’s a tad to understand, the theory
+                      behind it makes sense to me. I like that React is built around breaking things down to their base
+                      components. Modular components, are easier to manipulate and improve over time. I find React
+                      really enjoyabe to work with for these reasons.
                     </p>
                   </div>
                   <div class="modal-footer">
