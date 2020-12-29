@@ -8,13 +8,26 @@
   background: linear-gradient(135deg, #1c0658 65%, #36cdc4 100%);
 }
 
-.navbar-light .navbar-nav .active {
+a.navbar-brand.nav-link.active {
   background-color: #5c2686;
+  color: #fffcf4;
+  border-radius: 10px;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   background-color: #5c2686;
+  color: #fffcf4 !important;
+  border-radius: 10px;
+}
+
+a.navbar-brand.nav-link {
+  border-radius: 10px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  border-radius: 10px;
 }
 
 .page-header {

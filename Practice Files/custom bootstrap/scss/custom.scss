@@ -35,13 +35,26 @@ $spacers: map-merge($spacers, $add-spacers);
   background: linear-gradient(135deg, rgba(28, 6, 88, 1) 65%, rgba(54, 205, 196, 1) 100%);
 }
 
-.navbar-light .navbar-nav .active {
+a.navbar-brand.nav-link.active {
   background-color: rgb(92, 38, 134);
+  color: #fffcf4;
+  border-radius: 10px;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   background-color: rgb(92, 38, 134);
+  color: #fffcf4 !important;
+  border-radius: 10px;
+}
+
+a.navbar-brand.nav-link {
+  border-radius: 10px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link {
+  border-radius: 10px;
 }
 
 .page-header {
