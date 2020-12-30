@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Rock+Salt&family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=Rock+Salt&family=Sarina&family=Josefin+Sans:ital,wght@0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap");
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -26,6 +26,10 @@ $add-spacers: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $spacers: map-merge($spacers, $add-spacers);
 
+body {
+  font-family: "Josefin Sans", sans !important;
+}
+
 .gradient {
   background: rgb(92, 38, 134);
   background: linear-gradient(135deg, rgba(92, 38, 134, 1) 65%, rgba(255, 22, 144, 1) 100%);
@@ -41,15 +45,16 @@ $spacers: map-merge($spacers, $add-spacers);
   box-shadow: 0px 0px 24px #fff;
 }
 
+h2 {
+  font-family: "Josefin Sans", cursive;
+}
+
 .page-header {
   color: #fffcf4;
 
   h1 {
     font-family: "Sarina", cursive;
     font-style: italic;
-  }
-  h2 {
-    font-size: 1.25rem;
   }
 }
 
