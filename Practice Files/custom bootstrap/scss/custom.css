@@ -20,7 +20,6 @@
 
 .page-header h1, .page-header .h1 {
   font-family: "Sarina", cursive;
-  font-size: 5rem;
   font-style: italic;
 }
 
@@ -31,6 +30,10 @@
 .modal-body h3, .modal-body .h3 {
   width: 75%;
   border-bottom: 1px solid #f4d676;
+}
+
+.email-svg {
+  cursor: pointer;
 }
 
 /*!

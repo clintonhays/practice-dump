@@ -46,7 +46,6 @@ $spacers: map-merge($spacers, $add-spacers);
 
   h1 {
     font-family: "Sarina", cursive;
-    font-size: 5rem;
     font-style: italic;
   }
   h2 {
@@ -59,6 +58,10 @@ $spacers: map-merge($spacers, $add-spacers);
     width: 75%;
     border-bottom: 1px solid #f4d676;
   }
+}
+
+.email-svg {
+  cursor: pointer;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
