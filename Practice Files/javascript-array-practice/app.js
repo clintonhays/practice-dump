@@ -86,5 +86,21 @@
 // const joinArr = (arr, str) => {
 //   return arr.join(str);
 // };
-
 // console.log(joinArr(["Red", "Green", "White", "Black"], "-"));
+
+// 6. Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
+
+// 6. SOLUTION*
+
+const evenDash = (number) => {
+  const result = [];
+  const str = number.toString();
+  const arr = Array.from(str);
+
+  arr.forEach((num, index) => {
+    if (num % 2 === 0 && num[index + 1] % 2 === 0) {
+      console.log(num);
+      // result.push(num);
+    }
+  });
+};
