@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="openModal">Delete</button>
+
+    <div id="overlay" class="modal hidden">
+      <div class="content">
+        <header class="modalHeader">
+          <h2>Are you sure you want to delete?</h2>
+        </header>
+        <p class="modalP">This action cannot be undone.</p>
+        <footer class="modalFooter">
+          <button class="cancel">Cancel</button>
+          <button class="delete">Delete</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -31,6 +31,7 @@ a {
   background-color: whitesmoke;
   display: flex;
   justify-content: space-around;
+  font-size: 1.25em;
 }
 
 .dropdown {
@@ -47,9 +48,9 @@ a {
 
 .dropdownMenu {
   position: absolute;
-  top: 100%;
+  top: 85%;
   left: 0;
-  width: 100px;
+  width: 125px;
   background-color: white;
   border: 2px solid lightgray;
   border-radius: 4px;
