@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  background-color: rgba(146, 128, 102, 0.7);
+}
+
+header {
+  background-color: seagreen;
+}
+
+.headerWrapper {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#creets {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.creet {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5em;
+  width: 30%;
+  padding: 0.5em 0.75em;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px -11px rgba(0, 0, 0, 0.61);
+}
+
+.creetNameDate {
+  margin-top: 10px;
+}
+
+.user,
+.date,
+.likes {
+  font-weight: bold;
+}
+
+.likes {
+  font-size: 0.9em;
+}
+
+.dot,
+.date,
+.likes {
+  color: rgba(0, 0, 0, 0.5);
+}
