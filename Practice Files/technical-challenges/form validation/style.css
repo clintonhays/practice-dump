@@ -55,3 +55,7 @@ body {
 .signUpButton:hover {
   cursor: pointer;
 }
+
+.error {
+  color: red;
+}
